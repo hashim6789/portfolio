@@ -1,8 +1,12 @@
 import React from "react";
 import { useScrollAnimation } from "../../hooks";
-import { journeyData } from "../../assets/static";
+import {
+  journeyData,
+  pageActionBoxData,
+  pageHeaderData,
+} from "../../assets/static";
 import TimelineItem from "../../components/TimeLine";
-import { Button } from "../../components/ui";
+import { ActionBox, PageHeader } from "../../components/ui";
 
 const Journey: React.FC = () => {
   const [headerRef, headerVisible] = useScrollAnimation(0.5);
@@ -22,12 +26,10 @@ const Journey: React.FC = () => {
               : "translate-y-8 opacity-0"
           }`}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">My Journey</h1>
-          <p className="text-xl text-indigo-300 max-w-3xl mx-auto leading-relaxed">
-            A timeline of growth, learning, and technological mastery. From
-            humble beginnings to full-stack expertise, each step has been a
-            building block towards creating impactful software solutions.
-          </p>
+          <PageHeader
+            title={pageHeaderData.journey.title}
+            description={pageHeaderData.journey.description}
+          />
         </div>
 
         {/* Timeline */}
@@ -43,19 +45,12 @@ const Journey: React.FC = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-20">
-          <div className="backdrop-blur-sm border border-indigo-700 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">
-              Ready for the Next Chapter
-            </h3>
-            <p className="text-indigo-300 mb-6">
-              The journey continues with new technologies, challenges, and
-              opportunities to create innovative solutions.
-            </p>
 
-            <Button size="lg">Let's Build Something Amazing</Button>
-          </div>
-        </div>
+        <ActionBox
+          title={pageActionBoxData.journey.title}
+          description={pageActionBoxData.journey.description}
+          buttonText={pageActionBoxData.journey.buttonText}
+        />
       </div>
     </div>
   );

@@ -107,47 +107,6 @@ const About = () => {
         <Section title="About Me">
           <p>{AUTHOR_ABOUT_ME}</p>
         </Section>
-
-        {/* Skills Preview (Optional) */}
-        {/* <section className="mt-16 max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-indigo-900/30 backdrop-blur-sm border border-indigo-800 rounded-xl p-6 text-center hover:border-indigo-500 transition-colors duration-300">
-              <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Code className="text-indigo" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">
-                Full Stack Development
-              </h3>
-              <p className="text-indigo-400 text-sm">
-                MERN Stack, Scalable Systems
-              </p>
-            </div>
-
-            <div className="bg-indigo-900/30 backdrop-blur-sm border border-indigo-800 rounded-xl p-6 text-center hover:border-indigo-500 transition-colors duration-300">
-              <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <ExternalLink className="text-indigo" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">
-                Research & Innovation
-              </h3>
-              <p className="text-indigo-400 text-sm">
-                Problem Solving, Tech Research
-              </p>
-            </div>
-
-            <div className="bg-indigo-900/30 backdrop-blur-sm border border-indigo-800 rounded-xl p-6 text-center hover:border-green-500 transition-colors duration-300">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="text-indigo" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">
-                Security & Architecture
-              </h3>
-              <p className="text-indigo-400 text-sm">
-                Web Security, Distributed Systems
-              </p>
-            </div>
-          </div>
-        </section> */}
       </div>
     </div>
   );

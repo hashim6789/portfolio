@@ -20,6 +20,11 @@ export const pageHeaderData = {
     description:
       "A collection of projects showcasing my expertise in full-stack development, AI/ML, mobile applications, and cutting-edge technologies. Each project represents a unique challenge and innovative solution.",
   },
+  journey: {
+    title: "My Journey",
+    description:
+      "A timeline of growth, learning, and technological mastery. From humble beginnings to full-stack expertise, each step has been a building block towards creating impactful software solutions.",
+  },
 };
 
 export const pageActionBoxData = {
@@ -28,5 +33,11 @@ export const pageActionBoxData = {
     description:
       "I'm always excited to work on new challenging projects. Let's discuss how we can bring your vision to life!",
     buttonText: "Start a Project",
+  },
+  journey: {
+    title: "Ready for the Next Chapter",
+    description:
+      "The journey continues with new technologies, challenges, and opportunities to create innovative solutions.",
+    buttonText: "Let's Build Something Amazing",
   },
 };
