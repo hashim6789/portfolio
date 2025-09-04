@@ -53,7 +53,7 @@ const Journey: React.FC = () => {
               opportunities to create innovative solutions.
             </p>
 
-            <Button>Let's Build Something Amazing</Button>
+            <Button size="lg">Let's Build Something Amazing</Button>
           </div>
         </div>
       </div>

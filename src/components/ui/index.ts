@@ -3,3 +3,7 @@ export * from "./Button";
 export * from "./links";
 export * from "./Section";
 export * from "./SkillCard";
+export * from "./Badge";
+export * from "./TechStack";
+export * from "./PageHeader";
+export * from "./ActionBox";
