@@ -3,6 +3,7 @@ export const AUTHOR_DESIGNATION = "Full Stack Developer";
 export const AUTHOR_CONTACT = {
   phone: "+91 9074859571",
   email: "muhammedhashim6789@gmail.com",
+  location: "Kozhikode, Kerala",
 };
 
 export const AUTHOR_SOCIAL_LINKS = {
@@ -25,6 +26,11 @@ export const pageHeaderData = {
     description:
       "A timeline of growth, learning, and technological mastery. From humble beginnings to full-stack expertise, each step has been a building block towards creating impactful software solutions.",
   },
+  contact: {
+    title: "Get In Touch",
+    description:
+      "Have a project in mind? Let's collaborate and create something amazing together. I'm always excited to discuss new opportunities.",
+  },
 };
 
 export const pageActionBoxData = {
@@ -35,6 +41,12 @@ export const pageActionBoxData = {
     buttonText: "Start a Project",
   },
   journey: {
+    title: "Ready for the Next Chapter",
+    description:
+      "The journey continues with new technologies, challenges, and opportunities to create innovative solutions.",
+    buttonText: "Let's Build Something Amazing",
+  },
+  contact: {
     title: "Ready for the Next Chapter",
     description:
       "The journey continues with new technologies, challenges, and opportunities to create innovative solutions.",

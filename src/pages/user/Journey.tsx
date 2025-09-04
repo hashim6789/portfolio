@@ -12,10 +12,7 @@ const Journey: React.FC = () => {
   const [headerRef, headerVisible] = useScrollAnimation(0.5);
 
   return (
-    <div className="min-h-screen overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute"></div>
-
+    <div className="min-h-screen">
       <div className="relative z-10 container mx-auto px-6 py-16">
         {/* Header */}
         <div

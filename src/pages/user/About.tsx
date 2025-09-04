@@ -20,12 +20,10 @@ import avatarImage from "../../assets/img/avatar_02.png";
 const About = () => {
   return (
     <div className="min-h-screen">
-      {/* Background Pattern */}
-
       {/* Main Content Container */}
       <div className="relative z-10 container mx-auto px-6 py-12">
         <img
-          src={avatarImage} // Replace with actual image path or URL
+          src={avatarImage}
           alt={`${AUTHOR_NAME} profile`}
           className="w-80 h-80 md:w-56 md:h-56 mx-auto  object-cover border-4 border-indigo-500 shadow-lg mb-6"
         />

@@ -14,9 +14,9 @@ export const ActionBox: FC<ActionBoxProps> = ({
 }) => {
   return (
     <div className="text-center mt-20">
-      <div className="backdrop-blur-sm border border-indigo-700 rounded-2xl p-8 max-w-2xl mx-auto">
+      <div className="backdrop-blur-sm border border-indigo-900 dark:border-indigo-100 rounded-2xl p-8 max-w-2xl mx-auto">
         <h3 className="text-2xl font-bold mb-4">{title}</h3>
-        <p className="text-indigo-300 mb-6">{description}</p>
+        <p className="mb-6">{description}</p>
 
         <Button size="lg">{buttonText}</Button>
       </div>

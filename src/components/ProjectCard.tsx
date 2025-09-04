@@ -102,30 +102,6 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, index }) => {
             <TechStack technologies={project.technologies} />
           </div>
 
-          {/* Stats */}
-          {/* {project.stats && (
-            <div className="flex items-center space-x-4 text-sm text-indigo-400 mb-4">
-              {project.stats.stars && (
-                <div className="flex items-center space-x-1">
-                  <Star size={14} />
-                  <span>{project.stats.stars}</span>
-                </div>
-              )}
-              {project.stats.forks && (
-                <div className="flex items-center space-x-1">
-                  <Github size={14} />
-                  <span>{project.stats.forks}</span>
-                </div>
-              )}
-              {project.stats.users && (
-                <div className="flex items-center space-x-1">
-                  <Users size={14} />
-                  <span>{project.stats.users}+ users</span>
-                </div>
-              )}
-            </div>
-          )} */}
-
           {/* Key Features */}
           {project.features && project.features.length > 0 && (
             <div className="mb-4">
