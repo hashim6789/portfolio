@@ -19,7 +19,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ item, index, isLast }) => {
     <div className="relative">
       {/* Timeline Line */}
       <div
-        className={`absolute left-6 top-16 w-0.5 bg-gradient-to-b from-indigo-500 to-indigo-600 transition-all duration-1000 ${
+        className={`absolute left-6 top-16 w-0.5 transition-all duration-1000 ${
           contentVisible ? "h-full opacity-100" : "h-0 opacity-0"
         } ${isLast ? "hidden" : ""}`}
       ></div>
@@ -36,19 +36,19 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ item, index, isLast }) => {
       >
         {/* Node Circle */}
         <div
-          className={`relative z-10 w-12 h-12 rounded-full border-4 border-indigo-500 flex items-center justify-center transform transition-all duration-500 ${
-            titleVisible ? "scale-100 bg-indigo-500" : "scale-75 bg-transparent"
+          className={`relative z-10 w-12 h-12 rounded-full border-4 border-indigo-900 dark:border-indigo-100 flex items-center justify-center transform transition-all duration-500 ${
+            titleVisible ? "scale-100" : "scale-75"
           }`}
         >
-          <Calendar className="text-white" size={20} />
+          <Calendar size={20} />
         </div>
 
         {/* Content */}
         <div className="flex-1 pt-1">
           {/* Title and Timeline */}
           <div className="mb-4">
-            <h3 className="text-2xl font-bold text-white mb-2">{item.title}</h3>
-            <div className="flex items-center space-x-2 text-indigo-400">
+            <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
+            <div className="flex items-center space-x-2 ">
               <Calendar size={16} />
               <span className="font-medium">{item.timeline}</span>
             </div>
@@ -56,9 +56,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ item, index, isLast }) => {
 
           {/* Description */}
           {item.description && (
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              {item.description}
-            </p>
+            <p className="mb-6 leading-relaxed">{item.description}</p>
           )}
 
           {/* Skills Grid */}
@@ -71,7 +69,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ item, index, isLast }) => {
             }`}
             style={{ transitionDelay: `${index * 200 + 300}ms` }}
           >
-            <h4 className="text-lg font-semibold text-gray-200 mb-4 flex items-center">
+            <h4 className="text-lg font-semibold mb-4 flex items-center">
               <Zap className="text-yellow-400 mr-2" size={18} />
               Skills & Technologies
             </h4>
@@ -85,7 +83,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ item, index, isLast }) => {
           {/* Achievements */}
           {item.achievements && item.achievements.length > 0 && (
             <div className="mt-6">
-              <h4 className="text-lg font-semibold text-gray-200 mb-3 flex items-center">
+              <h4 className="text-lg font-semibold mb-3 flex items-center">
                 <Award className="text-green-400 mr-2" size={18} />
                 Key Achievements
               </h4>
@@ -93,7 +91,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ item, index, isLast }) => {
                 {item.achievements.map((achievement, achIndex) => (
                   <li
                     key={achIndex}
-                    className={`text-gray-300 flex items-start space-x-2 transform transition-all duration-500 ${
+                    className={`flex items-start space-x-2 transform transition-all duration-500 ${
                       contentVisible
                         ? "translate-x-0 opacity-100"
                         : "translate-x-4 opacity-0"

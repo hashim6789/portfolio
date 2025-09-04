@@ -12,6 +12,7 @@ import {
   Smartphone,
   Terminal,
   Users,
+  type LucideIcon,
 } from "lucide-react";
 import type { JourneyItem } from "../../types";
 
@@ -114,12 +115,7 @@ export const journeyData: JourneyItem[] = [
   },
 ];
 
-export type IconComponent = (props: {
-  size?: number;
-  className?: string;
-}) => JSX.Element;
-
-export const iconMap: Record<string, IconComponent> = {
+export const iconMap: Record<string, LucideIcon> = {
   React: Code,
   "Node.js": Server,
   JavaScript: Terminal,

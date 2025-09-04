@@ -18,3 +18,5 @@ export type LegalLink = {
   name: string;
   href: string;
 };
+
+export type FormStatus = "" | "success" | "error";
